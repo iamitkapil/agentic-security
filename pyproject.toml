@@ -38,6 +38,7 @@ slack = [
 
 [project.scripts]
 agentic-security = "agentic_security.security_cli:cli"
+agentic-agent = "agentic_security.agent_cli:agent_cli"
 
 [tool.setuptools.packages.find]
 where = ["src"]

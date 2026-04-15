@@ -11,6 +11,33 @@ ai:
   models:
     architecture_review: gpt-4-1106-preview
     fix_implementation: claude-3-sonnet-20240229
+
+# Agent Configuration
+agent:
+  enabled: true                    # Enable agent mode
+  autonomous: false                # Require manual approval for actions
+  auto_fix: false                  # Automatically apply fixes
+  auto_pr: false                   # Automatically create pull requests
+  max_iterations: 10               # Maximum reasoning-action cycles
+  memory_enabled: true             # Enable persistent memory
+  memory_dir: .agent_memory        # Memory storage directory
+  planning_enabled: true           # Enable strategic planning
+  learning_enabled: true           # Enable learning from past executions
+  
+  # Agent behavior settings
+  behavior:
+    verbose: false                 # Detailed logging
+    interactive: false             # Interactive mode
+    confirm_actions: true          # Confirm before executing actions
+    rollback_on_failure: true      # Rollback changes on failure
+    
+  # Tool configuration
+  tools:
+    scan_enabled: true
+    analysis_enabled: true
+    fix_enabled: true
+    test_enabled: true
+    git_enabled: true
   
 security_patterns:
   sql_injection:

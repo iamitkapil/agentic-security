@@ -4,6 +4,17 @@ A fully autonomous security pipeline that combines advanced AI tools to streamli
 
 Agentic Security harnesses OWASP ZAP for in-depth scans, enhanced by AI-driven analysis, catching critical architectural flaws from the earliest design stages through implementation and testing. For high-level security challenges, it incorporates red-teaming capabilities, with automated vulnerability assessments and adaptive fixes, each pushed to new branches for manual review.
 
+## 🤖 NEW: Autonomous ReAct Agent
+
+Now includes a **ReAct (Reasoning + Acting) Agent** that provides fully autonomous security operations:
+- 🧠 **Strategic Planning**: Multi-step task decomposition and execution
+- 🛠️ **Tool Use**: Autonomous scanning, analysis, and remediation
+- 💾 **Persistent Memory**: Learns from past executions
+- 🔄 **Self-Correction**: Adapts and recovers from failures
+- 📊 **Reasoning**: Step-by-step problem solving with AI
+
+[📖 Read the Agent Guide](docs/AGENT_GUIDE.md) | [🚀 Quick Start](#agent-quick-start)
+
 **Created by rUv, because why not?**
 
 ## Documentation
@@ -135,6 +146,40 @@ Get started immediately with automated workflows for seamless integration. The p
 | Severity-Based Decision Making    | Targeted fixes, minimized disruptions   |
 | Admin Notifications               | Immediate updates on security status    |
 | Retro-Futuristic Interface        | Enhanced usability and productivity     |
+
+## Agent Quick Start
+
+### Using the Autonomous Agent
+
+```bash
+# Run autonomous security scan
+agentic-agent autonomous-scan --path ./src
+
+# Analyze codebase security
+agentic-agent analyze --path ./src
+
+# Fix specific vulnerability
+agentic-agent fix-vulnerability src/app.py 42 sql_injection
+
+# Run full autonomous pipeline
+agentic-agent run-pipeline --mode autonomous
+
+# Interactive mode
+agentic-agent interactive
+```
+
+### Agent Features
+
+| Feature | Description |
+|---------|-------------|
+| 🤖 Autonomous Operation | Fully self-directed security operations |
+| 🧠 Strategic Planning | Multi-step task decomposition |
+| 💾 Persistent Memory | Learns from past executions |
+| 🛠️ Tool Use | 14+ security tools available |
+| 🔄 Self-Correction | Adapts to failures |
+| 📊 Reasoning | Step-by-step problem solving |
+
+[📖 Full Agent Documentation](docs/AGENT_GUIDE.md)
 
 ## Quick Start
 
